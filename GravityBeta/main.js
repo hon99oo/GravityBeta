@@ -540,10 +540,8 @@ var Scene1 = new Phaser.Class({
       player.setVelocityY(520);
       isCollided = 0;
     }
-    if(cursors.up.isDown && player.body.onFloor())
+    if(cursors.up.isDown)
     {
-  
-
       player.setGravityY(-1000);
       isCollided = 0;
       isReverse = 1;
