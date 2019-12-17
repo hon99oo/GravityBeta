@@ -530,7 +530,7 @@ var Scene1 = new Phaser.Class({
           player.anims.play('turn');
       }
     }
-    if (cursors.up.isDown && player.body.onFloor() && isReverse==0)
+    if (cursors.space.isDown && player.body.onFloor() && isReverse==0)
     {
       Jumps.play();
       player.setVelocityY(-520);
@@ -542,10 +542,9 @@ var Scene1 = new Phaser.Class({
       player.setVelocityY(520);
       isCollided = 0;
     }
-    if(cursors.space.isDown && player.body.onFloor())
+    if(cursors.up.isDown && player.body.onFloor())
     {
-//       player.setVelocityY(520);
-      Gravitys.play();
+//       Gravitys.play();
       player.setGravityY(-1000);
       isCollided = 0;
       isReverse = 1;
@@ -1054,7 +1053,7 @@ var Scene2 = new Phaser.Class({
           player.anims.play('turn');
       }
     }
-    if (cursors.up.isDown && player.body.onFloor() && isReverse==0)
+    if (cursors.space.isDown && player.body.onFloor() && isReverse==0)
     {
       Jumps.play();
       player.setVelocityY(-520);
@@ -1066,9 +1065,9 @@ var Scene2 = new Phaser.Class({
       player.setVelocityY(520);
       isCollided = 0;
     }
-    if(cursors.space.isDown && player.body.onFloor())
+    if(cursors.up.isDown && player.body.onFloor())
     {
-      Gravitys.play();
+//       Gravitys.play();
       player.setGravityY(-1000);
       boxes.setGravityY(-1000);
       boxes2.setGravityY(-1000);
@@ -1079,7 +1078,7 @@ var Scene2 = new Phaser.Class({
     }
     else if(cursors.down.isDown && isCollided==1)
     {
-      Gravitys.play();
+//       Gravitys.play();
       player.setGravityY(1000);
       boxes.setGravityY(1000);
       boxes2.setGravityY(1000);
@@ -1745,7 +1744,7 @@ var Scene3 = new Phaser.Class({
           player.anims.play('turn');
       }
     }
-    if (cursors.up.isDown && player.body.onFloor() && isReverse==0)
+    if (cursors.space.isDown && player.body.onFloor() && isReverse==0)
     {
       Jumps.play();
       player.setVelocityY(-520);
@@ -1757,9 +1756,9 @@ var Scene3 = new Phaser.Class({
       player.setVelocityY(520);
       isCollided = 0;
     }
-    if(cursors.space.isDown && player.body.onFloor())
+    if(cursors.up.isDown && player.body.onFloor())
     {
-      Gravitys.play();
+//       Gravitys.play();
       boxL.setGravityY(-1000);
       boxS.setGravityY(-1000);
       player.setGravityY(-1000);
@@ -1768,7 +1767,7 @@ var Scene3 = new Phaser.Class({
     }
     else if(cursors.down.isDown && isCollided==1)
     {
-      Gravitys.play();
+//       Gravitys.play();
       boxL.setGravityY(1000);
       boxS.setGravityY(1000);
       player.setGravityY(1000);
