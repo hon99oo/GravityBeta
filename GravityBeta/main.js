@@ -542,7 +542,7 @@ var Scene1 = new Phaser.Class({
       player.setVelocityY(520);
       isCollided = 0;
     }
-    if(cursors.space.isDown && player.body.touching.down)
+    if(cursors.space.isDown && player.body.onFloor())
     {
 //       player.setVelocityY(520);
       Gravitys.play();
