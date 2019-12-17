@@ -542,17 +542,16 @@ var Scene1 = new Phaser.Class({
     }
     if(cursors.up.isDown)
     {
-      player.setGravityY(-1000);
-      isCollided = 0;
-      isReverse = 1;
+      Gravitys.play();
+//       player.setGravityY(-1000);
+//       isCollided = 0;
+//       isReverse = 1;
     }
     else if(cursors.down.isDown && isCollided==1)
     {
-      
-      player.setGravityY(1000);
-
-      isCollided=0;
-      isReverse = 0;
+//       player.setGravityY(1000);
+//       isCollided=0;
+//       isReverse = 0;
     }
   }
 });
