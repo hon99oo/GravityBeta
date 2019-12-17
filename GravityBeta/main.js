@@ -26,7 +26,8 @@ var TeleS;
 var keyQ;
 var keyW;
 var keyE;
-
+var keyUP;
+var keyDOWN;
 var Menu = new Phaser.Class({
   Extends:Phaser.Scene,
   initialize:
@@ -473,6 +474,7 @@ var Scene1 = new Phaser.Class({
     text4= this.add.text(82,2125,{font:'32px Courier'
     });
     keyQ = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.Q)﻿;
+    
   },
   update:function()
   {
@@ -540,7 +542,7 @@ var Scene1 = new Phaser.Class({
       player.setVelocityY(520);
       isCollided = 0;
     }
-    if(cursors.up.isDown && body.onFloor())
+    if(cursors.up.isDown && player.body.touching.down)
     {
 //       player.setVelocityY(520);
       Gravitys.play();
